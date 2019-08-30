@@ -1,0 +1,54 @@
+footer {
+	width: 100vw;
+	height: auto;
+	background-color: $dark;
+	border-top: 5px dotted $blue;
+	padding: 30px 0 60px 0;
+	.container {
+		width: $screen_over1000;
+		margin: 0 auto;
+		text-align: center;
+		ul {
+			li {
+				display: inline-block;
+				margin: 30px 15px;
+				a {
+					color: $blue;
+					opacity: 0.4;
+			    filter:alpha(opacity=0);
+			    -webkit-transition:all 0.3s ease-out;
+			    transition:all 0.3s ease-out;
+					&:hover {
+						color: $blue;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.info {
+			p {
+				color: $green;
+				b {
+					font-weight: bold;
+					margin-right: 8px;
+				}
+				a {
+					color: $green;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					} 
+				}
+				span {
+					margin-right: 18px;
+				}
+			}
+		}
+		.copyright {
+			color: #fff;
+			opacity: 0.5;
+			margin-top: 24px;
+			font-size: 0.8em;
+		}
+	}
+}

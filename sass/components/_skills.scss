@@ -1,0 +1,153 @@
+#skills {
+	width: 100vw;
+	background: #fff;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	text-align: center;
+	.container {
+		// width: $screen_over1000;
+		min-height: 100vh;
+		margin: 0 auto;
+		display: table;
+		.table_cell {
+			display: table-cell;
+			vertical-align: middle;
+			h1 {
+				text-align: center;
+				font-size: 2.4em;
+				color: #6d6d6d;
+			}
+			.skills {
+				margin-top: 30px;
+				li {
+					width: 285px;
+					margin: 0 15px 0 0;
+					display: inline-block;
+					text-align: center;
+					vertical-align: top;
+					.circle {
+				    position:relative;
+				    display:block;
+				    text-align:center;
+				    width:148px;
+				    height:149px;
+				    margin:20px auto 50px;
+				    border-radius:50%;
+				    font-size:62px;
+				    line-height:150px;
+				    color:#fff;
+				    -webkit-transition:all 0.2s ease-out;
+				    transition:all 0.2s ease-out;
+				    &::before {
+				    	content: inherit;
+				    }
+						&:after {
+					    pointer-events:none;
+					    content:"";
+					    position:absolute;
+					    display:block;
+					    width: 168px;
+					    height: 168px; 
+					    top: -12px;
+					    left: -12px;
+					    border-width: 2px;
+					    border-style: solid;
+					    border-radius: 50%;
+					    -webkit-transition: all 0.2s ease-out;
+					    transition: all 0.2s ease-out;
+						}
+						// .iconmelon {
+						// 	width: 100px;
+						// 	height: 100px;
+						// 	vertical-align: middle;
+						// 	position: absolute;
+						// 	top: -129px;
+						// 	left: 21px;
+						// 	fill: #6d6d6d;
+						// }
+						.iconmelon {
+							width: 100px;
+							height: 100px;
+							vertical-align: middle;
+							position: absolute;
+							top: 50%;
+							margin-top: -50px;
+							left: 50%;
+							margin-left: -50px;
+							fill: #6d6d6d;
+							svg {
+								top:0;
+							}
+						}
+					}
+					&:last-child {
+						margin: 0;
+					}
+					h3 {
+						font-size: 1.4em;
+					}
+					p {
+						height: 120px;
+						overflow: hidden;
+						font-size: 1em;
+						line-height: 1.5em;
+						letter-spacing: 0.05em;
+						color: #6d6d6d;
+						margin-top: 30px;
+					}
+					.tags {
+						margin-top: 15px;
+						li {
+							color: #ccc;
+							margin-top: 8px;
+							width: auto;
+						}
+					}
+				}
+				.uxui {
+					.circle {
+						background: $orange;
+						&:after {
+							border-color: $orange;
+						}
+					}
+					h3 {
+						color: $orange;
+					}
+				}
+				.frontend {
+					.circle {
+						background: $purple;
+						&:after {
+							border-color: $purple;
+						}
+					}
+					h3 {
+						color: $purple;
+					}
+				}
+				.trend {
+					.circle {
+					background: $green;
+						&:after {
+							border-color: $green;
+						}
+					}
+					h3 {
+						color: $green;
+					}
+				}
+				.compose {
+					.circle {
+						background: $yellow;
+						&:after {
+							border-color: $yellow;
+						}
+					}
+					h3 {
+						color: $yellow;
+					}
+				}
+			}
+		}
+	}
+}

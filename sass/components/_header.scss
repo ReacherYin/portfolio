@@ -1,0 +1,28 @@
+header {
+	width: 100vw;
+	height: 100vh;
+	.container {
+		display: table;
+		min-height: 100vh;
+		margin: 0 auto;
+		color: #fff;
+		text-shadow: 0 0 130px #fff;
+		text-align: center;
+		.table_cell {
+			vertical-align: middle;
+		}
+	}
+	p {
+		color: #fff;
+		font-size: 27px;
+		margin: 21px 0;
+		color: $dark;
+		font-weight: bold;
+	}
+	h1 {
+		font-size: 90px;
+		font-weight: bold;
+		color: $dark;
+		//font-family: 'Fredericka the Great', cursive;
+	}
+}

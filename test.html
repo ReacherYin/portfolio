@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="javascripts/jquery-2.1.1.min.js"></script>
+	<script src="javascripts/jquery.mixitup.min.js"></script>
+	<style>
+		.works .mix{
+		    display: none;
+		}
+	</style>
+</head>
+<body>
+<ul>
+<li><a href="javascript:void(0);" class="filter" data-filter="all">all</a></li>
+	<li><a href="javascript:void(0);" class="filter" data-filter=".web">web</a></li>
+	<li><a href="javascript:void(0);" class="filter" data-filter=".app">app</a></li>
+	<li><a href="javascript:void(0);" class="filter" data-filter=".ci">ci</a></li>
+	<li><a href="javascript:void(0);" class="filter" data-filter=".event">event</a></li>
+</ul>
+
+
+<ul class="works">
+    <li class="mix web" data-my-order="1"><img src="images/works/index/1.jpg" alt=""></li>
+    <li class="mix app" data-my-order="2"><img src="images/works/index/2.jpg" alt=""></li>
+    <li class="mix ci" data-my-order="3"><img src="images/works/index/3.jpg" alt=""></li>
+    <li class="mix event" data-my-order="4"><img src="images/works/index/4.jpg" alt=""></li>
+		<li class="mix web" data-my-order="1"><img src="images/works/index/5.jpg" alt=""></li>
+    <li class="mix app" data-my-order="2"><img src="images/works/index/6.jpg" alt=""></li>
+</div>
+<!--
+		<section id="portfolio">
+			<div class="container">
+				<h1>近期作品</h1>
+				<ul class="filters">
+				<li><a href="" class="filter" data-filter="web">網站</a></li>
+				<li><a href="" class="filter" data-filter="app">App</a></li>
+				<li><a href="" class="filter" data-filter="ci">企業識別</a></li>
+				<li><a href="" class="filter" data-filter="event">宣傳活動</a></li>
+				</ul>
+				<ul class="works">
+				<li class="mix web"><a href="#" class="app_facefood"><img src="images/works/index/1.jpg" alt=""></a></li>
+				<li class="mix app"><a href="#" class="app_facefood"><img src="images/works/index/2.jpg" alt=""></a></li>
+				<li class="mix event"><a href="#" class="app_facefood"><img src="images/works/index/3.jpg" alt=""></a></li>
+				<li class="mix ci"><a href="#" class="app_facefood"><img src="images/works/index/4.jpg" alt=""></a></li>
+				<li class="mix app"><a href="#" class="app_facefood"><img src="images/works/index/5.jpg" alt=""></a></li>
+				<li class="mix web"><a href="#" class="app_facefood"><img src="images/works/index/6.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</section>
+-->
+		<script>
+			$(function(){
+			    $('.works').mixItUp();  
+			});
+		</script>
+</body>
+</html>
